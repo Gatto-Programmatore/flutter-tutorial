@@ -1,0 +1,43 @@
+/*
+
+Sito flutter: https://flutter.dev/
+
+Passi seguiti per l'installazione: https://docs.flutter.dev/get-started/install/windows/mobile
+* Inutile riscrivere i passi visto che c'è la guida.
+
+Avremo bisogno di installare (in windows):
+- git
+- android studio (oppure visual studio code oppure intellij idea)
+- flutter sdk
+- da androi studio: android sdk e android emulator (setup iniziale automatico).
+
+Dovremo anche:
+- aggiungere la variabile di sistema per flutter
+- accettare le licenze android da linea di comando (eseguendo: flutter doctor --android-licenses)
+- in android studio:
+  -- installare i plugin per flutter e dart in android studio una volta finito il setup iniziale.
+  -- aggiungere un dispositivo a piacere per l'emulatore (pixels 6a pro 33).
+
+Per verificare che tutto è stato installato eseguire da cmd "flutter doctor".
+Installare eventuali pezzi mancanti o riavviare il pc se già fatto ma non li vede.
+
+Se tutto è ok aprendo android studio scegliamo "new flutter project".
+
+
+! Android studio in automatico dovrebbe installare tutto con "setup wizzard", verifichiamo di avere:
+Android SDK Platform, API 35
+Android SDK Command-line Tools
+Android SDK Build-Tools
+Android SDK Platform-Tools
+Android Emulator
+
+
+
+
+
+
+
+
+
+
+ */
