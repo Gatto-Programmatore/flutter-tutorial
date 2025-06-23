@@ -1,0 +1,79 @@
+
+
+La maggior parte degli oggetti in flutter sono degli "widget".
+La home, il titolo, i pulsanti, le immagini, etc sono tutti widget.
+
+
+Alcuni widget accettano solo 1 widget al suo interno mentre altri come "column" e "row"
+accettano tanti widget detti "children".
+
+
+Per vedere tutti i widget che acetta un elemento / widget ci posizioniamo sopra
+con il clik oppure direttamente al link
+https://docs.flutter.dev/ui/widgets
+
+Alcuni widget che si trovano sul sito:
+- animazione
+- immagini & icone
+- async
+- appBasics: contenitori, colonne, loghi, righe, etc
+- cupertino: elementi grafici con la grafica ios invece che android
+- input: form, autocomplete, etc
+- interaction model: scroll, trascina, tocchi, gesti, etc
+- layout: allineamento, contenitori, griglie, liste, etc
+- material components: elementi grafici specifici per android (come cupertino)
+- scroll: effetti di scroll
+- altri widget
+
+Alcuni widget si potrebbero ripettere in varie categorie.
+
+
+Ad esempio per la barra in alto della nostra app possiamo modificare tante
+proprietà di cui ognugna accetta uno o più widget tra cui:
+
+Esempio di proprietà / widget che abbiamo applicato alla barra in alto:
+appBar: AppBar(
+  backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+  title: Text(widget.title),
+  leading: Icon(Icons.offline_bolt_sharp),
+  leadingWidth: 100,
+  actions: [
+    Icon(Icons.abc_outlined),
+    IconButton(onPressed: ()=> print('ciao'), icon: Icon(Icons.print)),
+  ],
+  foregroundColor: Colors.red,
+  systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.yellow),
+  elevation: 50,
+  shadowColor: Colors.blue,
+  toolbarHeight: 100,
+  toolbarOpacity: 0.6,
+  titleTextStyle: TextStyle(color: Colors.white),
+),
+
+
+Testo e stile:
+Possiamo formattare il testo come in word semplicemente applicandogli dello stile.
+Esempio di testo con stile:
+Text(
+  'You have pushed the button this many times:',
+  style: TextStyle(
+    color: Colors.red,
+    fontWeight: FontWeight.w800,
+    fontSize: 18,
+    shadows: [
+      Shadow(
+        offset: Offset(10.0, 10.0),
+        blurRadius: 10.0,
+        color: Color.fromARGB(255, 0, 0, 0),
+      ),
+    ],
+  ),
+),
+
+
+Da adesso in poi parleremo in dettaglio di ogni widget (i più usati) senza
+ripetere per ognugno "è un widget" quindi da considerarsi implicito.
+
+
+
+

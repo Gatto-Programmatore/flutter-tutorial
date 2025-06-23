@@ -1,0 +1,22 @@
+
+
+Scatole (box)
+Sono widget contenitori, non sono visibili ma impattano su altri widget.
+Servono per la disposizione del layout.
+
+Le scatole (box) si dividono in:
+- SizedBox: è una scatola con dimensioni fisse.
+                Ha solo altezza, larghezza e widget figlio ("child" opzionale).
+                L'utilizzo più comune è per aggiungere spazio tra gli widget oppure .
+                Se invece dobbiamo personalizzare o aggiungere sfondi o altro usiamo un widget
+                di tipo "container".
+- ExtendedBox: è un widget che si espande in automatico per occupare lo spazio disponibile.
+                Ha solo la proprietà "flex" ed un widget figlio ("child" opzionale).
+                La proprietà "flex" gestisce il comportamento di espansione quando abbiamo
+                2 widget di tipo extendedBox nello stesso layout quindi si auto-regolano.
+                Viene utilizzato per creare layout flessibili.
+- ConstrainedBox:
+
+
+
+

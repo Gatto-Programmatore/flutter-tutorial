@@ -1,0 +1,63 @@
+
+
+tutorial
+Contiene tutti gli appunti di questo corso
+Creata da me e non da Android Studio.
+
+
+.dart_tool
+Serve al funzionamento di Dart
+
+
+.idea
+Serve al funzionamento di Android Studio
+
+
+android & ios
+Il codice effettivo della nostra app per android e ios.
+Ovviamente convertito, noi lo scriviamo in dart.
+Ogni tanto faremo anche alcune modifiche a mano.
+
+
+buid
+Il codice che viene compilato
+
+
+lib
+Il nostro codice per l'app che stiamo creando.
+Contiene il main.
+
+
+test
+Eventuali test creati per automatizzare il testing
+
+
+.gitignore
+Serve a git per escludere file o cartelle dalla sincronizzazione
+
+
+.metadata
+flutter config
+
+
+analysis_options.yaml
+Serve per definire il lint / linter per dart.
+Cose che non faremo in questo corso.
+
+
+flutter-tutorial.iml
+Info applicazione del progetto
+
+
+pubspec.lock
+Tutte le dipendenze effettive. Non si puo modificare.
+
+
+pubspeck.yaml
+Info del progetto e configurazione ad esempio risorse e dipendenze.
+
+
+README.md
+File di git per descrivere questo progetto
+
+

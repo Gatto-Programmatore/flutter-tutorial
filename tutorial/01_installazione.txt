@@ -22,6 +22,7 @@ Per verificare che tutto è stato installato eseguire da cmd "flutter doctor".
 Installare eventuali pezzi mancanti o riavviare il pc se già fatto ma non li vede.
 
 Se tutto è ok aprendo android studio scegliamo "new flutter project".
+Premendo play dovremmo vedere una pagina bianca con una scritta ed un pulsante.
 
 
 ! Android studio in automatico dovrebbe installare tutto con "setup wizzard", verifichiamo di avere:

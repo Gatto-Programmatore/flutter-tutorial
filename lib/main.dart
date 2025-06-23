@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/* ho tolto i commenti dal main perché rendeva illeggibile il codice ma li
+* voglio conservare qui, ovviamente questo main non viene usato. */
+
 void main() {
   runApp(const MyApp());
 }
@@ -104,10 +107,21 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('You have pushed the button this many times:'),
+            const Text(
+              'You have pushed the button this many times:',
+              style: TextStyle(fontSize: 18),
+            ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            Text("(premi il + in basso a destra per incrementare)"),
+            Text(
+              "\n\nQuesta pagina è stata autogenerata come esempio da "
+              "AndroidStudio.\n\nPer seguire il tutorial si deve eseguire "
+              "ogni file \'main.dart_00\' con relativo numero che fa riferimento "
+              "agli appunti della cartella \'tutorial\'.",
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
           ],
         ),

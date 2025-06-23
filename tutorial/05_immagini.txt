@@ -1,0 +1,29 @@
+
+
+Per specificare all'app dove prendere le immagini dobbiamo aggiungere il path
+dentro il "filepubspec.yaml", nello specifico alla voce "assets".
+
+Esempio:
+assets:
+  - images/
+  - images/montagne.jpg
+
+
+L'immagine è un widget, ne esistono almeno 3 tipi:
+- AssetImage: prende l'immagine dalle risorse dell'app
+- FileImage (non so quale dei 2): prende l'immagine dalla memoria del dispositivo
+- NetworkImage: prende l'immagine da internet
+- altro
+
+Esempio:
+Image(image: AssetImage('images/montagne.jpg')
+che si puo abbreviare con:
+Image.asset('images/montagne.jpg')
+Image.network('url)
+
+
+Essendo l'immagine un widget ovviamente abbiamo varie proprietà per modificarla.
+Ad esempio width, color, opacity, fit, alignment, etc
+
+
+

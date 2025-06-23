@@ -1,0 +1,61 @@
+
+
+Abbiamo 3 tipi di bottoni:
+- TextButton: solo test
+- ElevatedButton: testo con contorno riepito di colore
+- OutlinedButton: testo con contorno vuoto e bordi
+
+Hanno una funzione che fa cose ovviamente.
+I pulsanti dentro potrebbero contenere altri widget.
+
+Esempio:
+TextButton(onPressed: (){}, child: Text("TextButton")),
+ElevatedButton(onPressed: (){}, child: Text("ElevatedButton")),
+OutlinedButton(onPressed: (){}, child: Text("OutlinedButton")),
+
+Le proprietà nella firma sono molte di più ad esempio:
+onLongPressed, onHover, onFocusChange, etc.
+
+Una proprietà utile è ButtonStyle: ha lo stesso funzionamento visto nei widget
+(essendo il bottone stesso un widget) però si scrive in modo leggermente diverso.
+
+Esempio:
+MaterialStateProperty usato come esempio nel tutorial è stato deprecato e
+sostituito da WidgetStateProperty, per questioni di tempo non cerco la soluzione
+ma vado avanti.
+
+Un modo più semplice invece è tipoBottone.StyleFrom() all'interno del pulsante stesso.
+
+Esempio:
+ElevatedButton.styleFrom(
+  foregroundColor: Colors.red
+)
+
+
+Per aggiungere delle icone ai pulsanti basta aggiungere ".icon" dopo il nome del bottone.
+Cambieranno anche le proprietà in quanto servirà "icon" e "label" invece di "child" e "text".
+
+Esempio:
+TextButton.icon(
+  onPressed: () {},
+  icon: Icon(Icons.access_time_filled),
+  label: Text("TextButton"),
+),
+ElevatedButton.icon(
+  onPressed: () {},
+  icon: Icon(Icons.access_time_filled),
+  label: Text("ElevatedButton"),
+),
+OutlinedButton.icon(
+  onPressed: () {},
+  icon: Icon(Icons.access_time_filled),
+  label: Text("OutlinedButton"),
+
+
+
+Si possono avere anche icone senza testo.
+
+Esempio:
+Icon(Icons.ac_unit)
+
+
