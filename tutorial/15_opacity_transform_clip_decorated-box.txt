@@ -1,0 +1,40 @@
+
+
+Opacity, Trasform, Clip, DecoratedBox
+Sono widget che permettono di modificare l'aspetto degli altri widget figli.
+
+
+Opacity come dice il nome modifica l'opacità del widget figlio, rendendolo più o meno trasparente.
+
+
+Transform permette di trasformare il widget figlio, ad esempio ruotandolo, scalando o traslandolo.
+
+Possiamo usare direttamente il widget Trasform con i suoi metodi invece di usarli come proprietà
+dentro altri widget.
+
+I metodi di trasformazione sono:
+- Trasforma.rotate: ruota il widget figlio.
+- Trasforma.scale: scala cioè ingrandisce o minimizza il widget figlio rispetto alla sua grandezza.
+- Trasforma.translate: trasla cioè sposta il widget figlio in una direzione specifica.
+
+
+Clip permette di ritagliare il widget figlio, ad esempio per creare bordi arrotondati o forme.
+Spesso si puo usare quando il widget non permette di farlo con le sue proprietà.
+
+Clip puo avere più forme come:
+- ClipRect
+- ClipRRect (la 1 R sta per rounded cioè arrotondato = rettangolo arotondato)
+- ClipOval
+- ClipRSuperellipse
+
+
+DecoratedBox
+Solitamente viene usata per sfondi (background) particolari.
+
+Alcune proprietà:
+- color
+- shape
+- backgroundBlendMode: mescola colore scelto con lo sfondo o l'immagine (widget figlio)
+- gradient: sfuma da un colore A ad un colore B
+
+

@@ -1,0 +1,10 @@
+
+
+ListTile e GridTile
+Sono i singoli elementi che compongono le liste (listView) e le griglie (gridView).
+
+Hanno molte più proprietà per personalizze ogni singolo elemento della lista o griglia.
+Queste proprietà permettono di scrivere meno codice.
+
+
+

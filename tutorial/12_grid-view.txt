@@ -1,0 +1,10 @@
+
+
+GridView
+
+
+
+
+Abbiamo più modi di creare una lista a forma di griglia:
+- GridView.count: 
+- GridView.builder

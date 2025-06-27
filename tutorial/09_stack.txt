@@ -1,0 +1,49 @@
+
+
+Stack
+
+Ci permette di posizionare in modo fisso degli elementi (widget) all'interno di una pagina in
+sovrapposizione, ad altri anche durante lo scorrimento.
+Ad esempio un pulsante.
+E' come se crea dei livelli, uno sopra l'altro, in cui possiamo posizionare gli elementi.
+
+Si può utilizzare anche su un elemento più piccolo, ad esempio una card.
+
+Permette di avere più figli (elementi).
+
+
+Si usano le proprietà: left, right, top, bottom.
+La distanza è dal margine indicato e può essere sia positiva che negativa.
+
+Esempio di codice:
+body: Stack(
+children: [
+  Positioned(
+    bottom: 50,
+    left: 150,
+    child: Container(
+      color: Colors.orange,
+      width: 100,
+      height: 100,
+      child: Icon(Icons.ac_unit),
+    ),
+  ),
+],
+),
+
+
+Sulla proprietà Positioned possiamo aggiungere "fill" che riempie lo spazio nelle direzioni indicate.
+Esempio: Positioned.fill(...)
+
+
+Suggerimento di utilizzo:
+Lo scaffold è tutta la struttura della pagina, con la barra delle notifiche, la navbar,
+il body e il drawer.
+Se si vuole posizionare un elemento a prescindere dal body si sostituisce Stack a Scaffold.
+
+(non so se ci sono vantaggi o svantaggi ma funziona anche usando solo il body con un contenitore
+dentro cui lo stack è uno dei figli. Esempio nel main_10.dart e 10_scroll.txt)
+(al momento l'unico vantaggio secondo me è se lo vogliamo su più pagine diverse scrivendo
+solo da una parte il suo codice)
+(forse utile anche quando le dimensioni dello schermo cambiano, ma se i contenitori sono fill o è
+1 soltanto non serve, sempre secondo me)

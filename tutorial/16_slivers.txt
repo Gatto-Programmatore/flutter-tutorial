@@ -1,0 +1,24 @@
+
+
+Slivers
+Permette di creare efetti di scorrimento personalizzati.
+
+Tecnicamente gestisce la parte di scroll di un widget.
+
+
+Alcuni tipi di slivers:
+(per usarli si deve mettere come padre "CustomScrollView")
+- SliverList
+    -- SilverChildDelegate: creiamo noi i vari elementi della lista
+    -- SilverChildBuilderDelegate: c'è un builder che crea tutto in automatico
+- SliverGrid
+- SliverAppBar
+    -- pinned: resta fissa al minimo quando andiamo in basso, altrimenti scompare
+    -- expandedHeight: si ingrandisce quando andiamo in alto fino a tot grandezza
+    -- snap: si nasconde quando si scorre verso il basso e appare quando si scorre verso l'alto
+- SliverToBoxAdapter
+    -- permette di inserire un widget normale (non scrollabile) all'interno di uno sliver e lo
+    converte in modod che diventi scrollabile (ad esempio un un Text, una Image, ecc.)
+- SliverPersistentHeader
+    -- (non spiegata, la consiglia solo)
+- tanto altro

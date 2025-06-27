@@ -1,0 +1,7 @@
+
+
+Stateless e Stateful
+Sono gli stati dei widget.
+
+Si dividono in:
+-

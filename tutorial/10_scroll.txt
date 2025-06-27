@@ -1,0 +1,35 @@
+
+
+Scorrimento - Scroll
+
+Permette di scorrere gli elementi (widget) all'interno di una pagina quando superano la dimensione
+dello schermo.
+
+
+In base a quello che ci serve abbiamo più tipi di widget per lo scorrimento:
+- Scrollbar
+- SingleChildScrollView
+- ListView (nel prossimo step, "main_11.dart" e "11_listview.txt")
+- GridView ("main_12.dart" e "12_gridview.txt")
+- altre non viste nel tutorial
+
+
+Proprietà di Scrollbar:
+Scrollbar(
+- thumbVisibility: sempre visibile o solo quando si scorre.
+- trackVisibility: riquadro dentro cui scorre la barra.
+- radius: l'arrotondamento dei lati della barra.
+- scrollbarOrientation: lato dello schermo dove è posizionata. Attenzione che deve seguire
+    l'orientamento dello scroll altrimenti da errore. Cioè non la posso mettere sotto se scorro in baso.
+- thickness: spessore della barra.
+
+
+Proprietà di SingleChildScrollView:
+- scrollDirection: indica la direzione di scorrimento, orizzontale o verticale.
+- reverse: parte dal basso invece che dall'alto. (sulle listView inverte gli elementi figli)
+- padding: aggiunge uno spazio dal bordo desiderato.
+- scrollController: ti dice quando hai raggiunto l'inizio o la fine della pagina.
+    Ad esempio per mostrare il pulsante "torna su" quando si scorre verso il basso.
+    Serve però un controller, che è un oggetto che gestisce lo scorrimento che vedremo più avanti.
+-
+

@@ -1,0 +1,14 @@
+
+
+ListView
+Sono elementi (widget) già pronti per lo scorrimento, che mostrano una lista di elementi figli.
+
+Si potrebbero fare manualmente con singoli componenti ad esempio ScrollView e Container, ma se
+non ha senso perdere tempo quando esistono già pronti.
+
+
+Possono essere orizzontali o verticali, cambiando la proprietà "scrollDirection".
+
+Creano in automatico gli elementi figli quanti sono quelli in input.
+
+

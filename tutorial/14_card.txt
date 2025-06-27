@@ -1,0 +1,13 @@
+
+
+Card
+Sono l'evoluzione degli elementi nelle liste e nelle griglie.
+
+Aggiungono elevazione, bordi arrotondati e ombre tra le altre cose semplificando ancora di più il
+codice.
+
+
+Alcune proprietà interesanti:
+- shape: permette di personalizzare la forma della card.
+- clipBehavior: permette di gestire i bordi ad esempio arrotondandoli.
+
