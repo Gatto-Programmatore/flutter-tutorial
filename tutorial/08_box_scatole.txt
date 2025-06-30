@@ -1,6 +1,6 @@
 
 
-Scatole (box)
+Box - Scatole
 Sono widget contenitori, non sono visibili ma impattano su altri widget.
 Servono per la disposizione del layout.
 

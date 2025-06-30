@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Slivers'),
     );
   }
 }
@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // resta fissa al minimo quando andiamo in basso, altrimenti scompare
             expandedHeight: 120,
             // si ingrandisce quando andiamo in alto fino a tot grandezza
-            flexibleSpace: FlexibleSpaceBar(title: Text('Titolo di prova')),
+            flexibleSpace: FlexibleSpaceBar(title: Text('Slivers')),
           ),
           // Lista
           SliverList(

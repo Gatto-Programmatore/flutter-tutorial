@@ -1,7 +1,8 @@
 
 
-ListView
-Sono elementi (widget) già pronti per lo scorrimento, che mostrano una lista di elementi figli.
+Liste - ListView
+Sono elementi (widget) già pronti per lo scorrimento, che mostrano una lista di elementi figli
+in forma di lista verticale o orizzontale con un solo elemento per riga.
 
 Si potrebbero fare manualmente con singoli componenti ad esempio ScrollView e Container, ma se
 non ha senso perdere tempo quando esistono già pronti.

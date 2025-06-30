@@ -1,5 +1,6 @@
 
 
+Immagini
 Per specificare all'app dove prendere le immagini dobbiamo aggiungere il path
 dentro il "filepubspec.yaml", nello specifico alla voce "assets".
 

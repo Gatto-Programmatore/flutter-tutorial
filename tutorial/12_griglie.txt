@@ -1,0 +1,10 @@
+
+
+Griglie - GridView
+Sono elementi (widget) già pronti per lo scorrimento, che mostrano una lista di elementi figli
+in forma di griglia con 2 o più elementi per riga.
+
+
+Abbiamo più modi di creare una lista a forma di griglia:
+- GridView.count: 
+- GridView.builder

@@ -1,5 +1,6 @@
 
 
+Widget:
 La maggior parte degli oggetti in flutter sono degli "widget".
 La home, il titolo, i pulsanti, le immagini, etc sono tutti widget.
 

@@ -1,6 +1,6 @@
 
 
-Scorrimento - Scroll
+Scroll - Scorrimento
 
 Permette di scorrere gli elementi (widget) all'interno di una pagina quando superano la dimensione
 dello schermo.

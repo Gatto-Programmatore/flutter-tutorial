@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Opacity, Transform, Clip, DecoratedBox'),
     );
   }
 }
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             color: Colors.green,
             constraints: BoxConstraints(minWidth: double.infinity),
-            child: Text('Trasform.scale:', style: TextStyle(fontSize: 20),),
+            child: Text('Transform.scale:', style: TextStyle(fontSize: 20),),
           ),
           SizedBox(
             height: 100,
@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             color: Colors.green,
             constraints: BoxConstraints(minWidth: double.infinity),
-            child: Text('Trasform.translate:', style: TextStyle(fontSize: 20),),
+            child: Text('Transform.translate:', style: TextStyle(fontSize: 20),),
           ),
           SizedBox(
             height: 50,

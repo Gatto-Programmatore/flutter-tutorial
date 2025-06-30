@@ -1,5 +1,7 @@
 
 
+Container, Padding, Margin e Border
+
 Il CONTAINER cioè contenitore si adatta al suo widget interno.
 
 Il PADDING è lo spazio tra il contenitore ed il suo elemento interno.
