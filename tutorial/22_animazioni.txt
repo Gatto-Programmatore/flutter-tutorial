@@ -1,0 +1,26 @@
+
+
+Animazioni:
+
+Sono effetti ottici / grafici che rendono dinamici gli elementi.
+Per quasi tutti gli widget esistenti esiste una versione animata.
+
+
+Esempio di alcuni widget animati ma ce ne sono tantissimi:
+- AnimatedIcon
+- AnimatedContainer
+- AnimatedAlign
+- AnimatedGrid
+- AnimatedList
+- etc
+
+
+Le animazioni hanno bisogno degli stati per memorizzare le varie posizioni di movimento.
+
+
+Per cambiare un widget gli si assegnano le proprietà altezza, larghezza e altro poi si fanno
+cambiare nel metodo setState(){...} ed in automatico cambierà anche il widget.
+
+
+Si puo aggiungere anche un efetto ottico di movimento con la proprietà "curve".
+Es: curve: Curves.fastOutSlowIn;

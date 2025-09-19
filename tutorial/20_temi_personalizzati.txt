@@ -1,0 +1,38 @@
+
+
+Temi personalizzati:
+
+Parliamo del widget 'Theme' che si occupa di gestire i temi cioè colori, font, etc nell'app.
+Non solo nel body ma tutto, anche la barra di navigazione, i bottoni, etc.
+
+Sono utili quando abbiamo voglia usare un tema unico per tutta l'applicazione, oppure quando
+vogliamo cambiare il tema in base a determinate condizioni (es. tema scuro o chiaro).
+
+
+Ogni widget può avere un suo tema.
+
+
+Come per gli widget personalizzati anche qui li possiamo definire separatamente in un file come
+classi e poi importarli nel file dove li usiamo.
+
+
+Proprietà del widget Theme:
+- brightness: luminosità del tema (scuro o chiaro)
+- colorScheme: colori del tema
+- textTheme: tema dei testi
+- primarySwatches: genera in automatico una palette di colori primari prendendo il colore principale
+in input, ad esempio sul giallo farà giallo chiaro, giallo scuro, etc.
+-
+
+
+Possiamo usare il tema in altri widget richiamando le sue proprietà con il metodo
+"Theme.of(context)".
+Es: Theme.of(context).colorSheme.primary, ad esempio per prendere il colore primario del tema.
+
+Possiamo copiare un tema e cambiare soltanto 1 proprietà con il metodo "copyWith()".
+Es: Theme.of(context).copyWith(backgroundColor: Colors.red).
+
+
+Le modifiche del widget più interno prevalgono su quelle del widget più esterno o dell'app.
+Funzionano come l'ereditarietà.
+

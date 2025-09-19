@@ -18,7 +18,7 @@ Alcuni tipi di slivers:
     -- snap: si nasconde quando si scorre verso il basso e appare quando si scorre verso l'alto
 - SliverToBoxAdapter
     -- permette di inserire un widget normale (non scrollabile) all'interno di uno sliver e lo
-    converte in modod che diventi scrollabile (ad esempio un un Text, una Image, ecc.)
+    converte in modo che diventi scrollabile (ad esempio un un Text, una Image, ecc.)
 - SliverPersistentHeader
     -- (non spiegata, la consiglia solo)
 - tanto altro

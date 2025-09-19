@@ -1,0 +1,47 @@
+
+
+Firebase - login, registrazione, logout:
+
+E' un servizio di Google che semplifica la gestione ed il rilascio delle applicazioni.
+
+Offre vari strumenti tra cui:
+- autenticazione (login, registrazione, logout)
+- database NO-SQL (realtime, firestore)
+- storage (per salvare file, immagini, ecc)
+- hosting (per pubblicare il sito web)
+- analytics (per analizzare l'uso dell'app)
+- altro.
+
+
+Firebase lo troviamo a questo link:
+https://firebase.flutter.dev/docs/overview
+
+Possiamo gestire i vari progetti dalla console di firebase:
+https://console.firebase.google.com/
+(in questo caso https://console.firebase.google.com/project/corso-flutter-9d16a/overview)
+
+
+
+Per aggiungere Firebase al progetto Flutter seguiamo la guida ufficiale:
+(oltre che le indicazioni del tutorial datate)
+
+Abbiamo installato firebase CLI (command line interface) versione .exe ma non ha funzionato quindi
+l'ho reinstallato anche da terminale con "npm install -g firebase-tools".
+Abbiamo fatto il login da cli con "firebase login".
+Abbiamo connesso un progetto firebase esistente con "flutterfire configure --project:390427294036t"
+(in teoria si doveva specificare il nome ma non l'ha preso).
+Possiamo vedere la lista dei progetti con "firebase projects:list".
+Abbiamo aggiunto la dipendenza "firebase_core" al progetto con "flutter pub add firebase_core".
+Abbiamo aggiunto la dipendenza "firebase_auth" al progetto con "flutter pub add firebase_auth".
+
+
+Sono serviti anche questi import:
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+
+E nel main questo:
+  // assicurarsi che flutter sia inizializzato altrimenti firebase da errore
+  WidgetsFlutterBinding.ensureInitialized();
+  // inizializzazione firebase
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);

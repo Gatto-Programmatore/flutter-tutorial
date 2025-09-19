@@ -1,0 +1,67 @@
+
+
+Form, Check, Radio, Slider, Switch
+
+
+
+Form:
+Ci permette di raggrupare più campi di input (textfield, checkbox, radio, etc) e gestirli insieme
+invece che separatamente.
+Per alcuni campi aggiunge la validazione automatica.
+Per usarlo dobbiamo dichiarare chiave globale (GlobalKey) che useremo per richiamare
+il form e le sue proprietà come ad esempio la validazione in altri punti del codice.
+
+Il problema, come dicevamo sopra, è che solo alcuni campi sono validabili in automatico come ad
+esempio il TextField.
+Per gli altri campi dobbiamo creare un form personalizzato con il widget "FormField".
+
+Per ovviare a questo problema possiamo usare le librerie di flutter che offrono la validazione su
+tutti i tipi di widget di input.
+La libreria si chiama "flutter_form_builder" e la troviamo su pub.dev.
+Va usata insieme a "form_builder_validators" se vogliamo che funzioni la validazione.
+
+Textfield - esempio di campo di input del form
+Offre tante proprietà per gestire l'input di testo come ad esempio:
+- tipologia di input (testo, numero, email, password, etc)
+- validazione dell'input (es. email valida, numero, etc)
+- placeholder (testo che scompare quando inizi a scrivere)
+- etichetta (testo che rimane sopra il campo di testo)
+- lunghezza massima testo
+- oscurare il testo (per password)
+- stile del testo
+- forma e colore del campo di testo come cursore, bordo, sfondo, etc
+
+
+
+CheckBox
+
+E' la casella di spunta.
+Si puo personalizzare con vari colori.
+Ha due stati: selezionato e non selezionato.
+Si usa in combinazione con una variabile booleana (true/false).
+
+
+
+Radio
+
+E' la lista dove si puo selezionare una sola opzione alla volta.
+Si usa in combinazione con una variabile che puo essere di tipo stringa, numero,
+booleano, ecc.
+Anche la radio cambia il suo stato in base al valore della variabile.
+Dobbiamo creare una radio per ogni opzione della lista, veranno associate in automatico
+dalla variabile nello stato (proprietà "groupValue").
+
+
+
+Slider
+
+E' la barra di scorrimento orizzontale che permette di aumentare o diminuire un valore.
+Ad esempio il volume o la luminosità.
+Si può lasciare libera (intera) oppure si può dividere in tot parti usando la proprietà "divisions".
+
+
+
+Switch
+
+E' l'interruttore on/off.
+Si può personalizzare con vari colori come tutti gli altri widget.

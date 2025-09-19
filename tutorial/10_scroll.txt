@@ -20,7 +20,8 @@ Scrollbar(
 - trackVisibility: riquadro dentro cui scorre la barra.
 - radius: l'arrotondamento dei lati della barra.
 - scrollbarOrientation: lato dello schermo dove è posizionata. Attenzione che deve seguire
-    l'orientamento dello scroll altrimenti da errore. Cioè non la posso mettere sotto se scorro in baso.
+    l'orientamento dello scroll altrimenti da errore. Cioè non la posso mettere sotto se scorro in
+    baso.
 - thickness: spessore della barra.
 
 

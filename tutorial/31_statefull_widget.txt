@@ -1,0 +1,32 @@
+
+
+Statefull widget lifecycle - Ciclo di vita di un widget
+
+
+Tutti i metodi degli stati si possono sovrascrivere (override) e modificare.
+Ad esempio si potrebbe mettere metterre una stampa in ognuno per vedere quando viene chiamato.
+
+stati
+
+Constructor: costruisce gli widget in memoria.
+
+createState: crea lo stato e le variabili di cui ha bisogno.
+Es: void initState() {
+       super.initState();
+     }
+Però se vogliamo che il builder tiene traccia delle cose create nello stato dobbiamo usare un
+FutureBuilder invece di un Builder semplice, cioè dobbiamo usarle FutureBuilder come 1 widget
+del nostro body invece di Center o altro.
+
+
+State:
+initState: viene inizializzato lo stato sia di de
+didChangeDependencies
+dirty:
+build: viene creato a schermo il widget
+clean > setState / didUpdateWidget > dirty
+clean:
+setState: cambio di stato dall'interno cioè dal widget stesso. Es: quando fai doppio tap
+didUpdateWidget: cambio di stato che viene dall'esterno cioè da un widget padre
+dispose: ultimo stato chiamato quando il widget viene distrutto. Vengono distrutti anche eventuali
+listener se ce ne sono.

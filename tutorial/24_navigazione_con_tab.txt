@@ -1,0 +1,26 @@
+
+
+Navigazione con le Tab:
+
+Sono come dei pulsanti per navigare tra le pagine dell'app come se fosse un menu.
+
+Simili ai Router (routing) perché spostano effetivamente il contenuto da una pagina all'altra.
+
+
+Per usarle dobbiamo usare come "home" della pagina il widget "DefaultTabController" che gestisce
+le tab e il loro stato.
+Poi dentro "appBar" dobbiamo mettere il widget "TabBar" che contiene le tab (i pulsanti).
+Infine nel body della pagina mettiamo il widget "TabBarView" che contiene le pagine (i contenuti).
+
+Nel "DefaultTabController" dobbiamo specificare il numero di tab che avremo con "length: n".
+Altrimenti da errore.
+
+Possiamo rendere anche scrollabile la barra delle tab con "isScrollable: true" dentro "TabBar".
+Laddove le tab sono tante oppure con titoli lunghi e non ci stanno tutte nello schermo.
+
+Possiamo personalizzare il modo di evidenziare la tab corrente con la proprietà "indicator"
+in "TabBar". Possiamo anche mettere immagini volendo.
+
+In ogni tab metteremo una pagina che può essere anche un file/widget separato.
+
+Si possono cambiare le tab dinamicamente cioè da codice (non spiegato nel tutorial).

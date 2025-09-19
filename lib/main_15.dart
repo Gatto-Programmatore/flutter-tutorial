@@ -45,16 +45,12 @@ class _MyHomePageState extends State<MyHomePage> {
             constraints: BoxConstraints(minWidth: double.infinity),
             child: Text('Opacity:', style: TextStyle(fontSize: 20),),
           ),
-          SizedBox(
-            child: ListView(
-              children: [
-                Opacity(
-                  opacity: 0.5, //
-                  child: Container(height: 50, color: Colors.red),
-                ),
-              ],
-            ),
-          ),
+      SizedBox(
+        child: Opacity(
+          opacity: 0.5,
+          child: Container(height: 50, color: Colors.red),
+        ),
+      ),
           // separatore visivo
           Container(
             color: Colors.green,

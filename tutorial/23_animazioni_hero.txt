@@ -1,0 +1,12 @@
+
+
+Animazioni Hero:
+
+Sono quelle animazioni che danno l'effetto di trascinare un widget come un immagine da un punto ad
+un altro nella nostra applicazione.
+
+Ad esempio da un pagina all'altra.
+
+
+Per dirgli i punti A e B usiamo il widget "Hero" con la sua proprietà "tag" che funge da id.
+Lo dobbiamo mettere (il widget) in entrambi i widget A e B cosi li collega tra di loro.

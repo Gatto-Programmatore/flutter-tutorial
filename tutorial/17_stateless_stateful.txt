@@ -1,0 +1,24 @@
+
+
+Stateless e Stateful
+Sono gli stati dei widget.
+
+
+Stateless significa che gli elementi (widget) non devono memorizzare dati perché sono statici e
+non cambiano.
+
+
+Stateful significa che dovrà memorizzare dati per poter aggiornare gli elementi (widget).
+
+* lo vediamo meglio nel file "main_31" e "31_statefull_widget.txt" dentro la cartella tutorial.
+
+Per fare questo all'interno di un elemento (widget) si chiama il metodo setState().
+Esempio:
+setState(() {
+    counter++; // questa riga fuori dal "setState" aggiorna la variabile ma non il widget a
+schermo
+});
+
+
+Abbiamo usato il widget "InkWell" per gestire il doppio click sulla card (non spiegato nel
+tutorial)

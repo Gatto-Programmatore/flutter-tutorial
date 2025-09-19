@@ -69,15 +69,27 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text('(premi + in basso a destra per incrementare)'),
             Text("\n\n"),
-            TextButton(onPressed: () {}, child: Text("TextButton")),
-            ElevatedButton(onPressed: () {}, child: Text("ElevatedButton")),
-            OutlinedButton(onPressed: () {}, child: Text("OutlinedButton")),
+            TextButton(
+              onPressed: () => print('TextButton'),
+              child: Text("TextButton"),
+            ),
+            ElevatedButton(
+              onPressed: () => print('ElevatedButton'),
+              child: Text("ElevatedButton"),
+            ),
+            OutlinedButton(
+              onPressed: () => print('OutlinedButton'),
+              child: Text("OutlinedButton"),
+            ),
             TextButton.icon(
-              onPressed: () {},
+              onPressed: () => print('TextButton.icon'),
               icon: Icon(Icons.access_time_filled),
               label: Text("TextButton"),
             ),
-            Icon(Icons.ac_unit),
+            IconButton(
+              onPressed: () => print('IconButton'),
+              icon: Icon(Icons.ac_unit),
+            ),
           ],
         ),
       ),

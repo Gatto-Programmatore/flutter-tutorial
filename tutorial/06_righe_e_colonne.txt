@@ -10,7 +10,7 @@ Esempio con alcune proprietà:
 body: Container(
     color: Colors.orange,
     child: Row(
-    // Row oppure Column alla riga sopra
+    // Row oppure Column (alla riga sopra)
       verticalDirection: VerticalDirection.down,
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       crossAxisAlignment: CrossAxisAlignment.stretch,

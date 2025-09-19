@@ -1,0 +1,20 @@
+
+
+Gps (geolocalizazione):
+
+Ci permette di ricevere la posizione del dispositivo.
+
+
+Si puo anche ricevere la posizione in tempo reale quindi aggiornata
+location.onLocationChanged.listen((LocationData currentLocation) {
+  // Use current location
+});
+
+
+Oppure quella in background
+location.enableBackgroundMode(enable: true)
+
+
+Abbiamo aggiunto la dipendenza "location" con ""flutter pub add location".
+Maggiori info su:
+https://pub.dev/packages/location

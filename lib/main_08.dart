@@ -49,9 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(height: 50, color: Colors.orange),
           /* Serve principalmente per uno spazio fisso senza contenuto,
           altrimenti usiamo altri widget come "container" o altro */
-          SizedBox(height: 100, width: double.infinity),
+          SizedBox( // bianco
+              height: 100, width: double.infinity
+          ),
           Container(height: 50, color: Colors.orange),
-          Expanded(
+          Expanded( // rosso
             // si adatta allo spazio disponibile
             child: Container(
               color: Colors.red,
@@ -60,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Container(height: 50, color: Colors.orange),
-          ConstrainedBox(
+          ConstrainedBox( // blu
             constraints: BoxConstraints(minHeight: 100, maxHeight: 300),
             // anche se imposto altezza 400 del figlio, massimo 300 del padre
             child: Container(color: Colors.blue, height: 400),

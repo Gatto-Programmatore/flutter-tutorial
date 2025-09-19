@@ -31,8 +31,12 @@ children: [
 ],
 ),
 
+Si può aprezzare meglio la sua utilità nel prossimo step (main_10.dart) con uno sfondo che cambia
+ma con lo stack fisso.
 
-Sulla proprietà Positioned possiamo aggiungere "fill" che riempie lo spazio nelle direzioni indicate.
+
+Sulla proprietà Positioned possiamo aggiungere "fill" che riempie lo spazio nelle direzioni
+indicate.
 Esempio: Positioned.fill(...)
 
 

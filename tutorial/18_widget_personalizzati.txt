@@ -1,0 +1,27 @@
+
+
+Widget personalizzati:
+
+Tutti gli widget (elementi) si possono ri-usare in più punti dell'applicazione.
+
+Questo è utile quando le applicazioni sono grandi ed il codice sarebbe lunghissimo se scritto in una
+sola pagina diventando anche complesso da modificare.
+
+
+L'ide ci aiuta a crearli se scriviamo il nome del widget fuori dal main (o altro codice).
+
+
+Per personalizzare un widget dobbiamo dichiararlo come una classe.
+Se decidiamo di metterlo al di fuori del main (o altro package) dobbiamo anche importarlo.
+
+Il widget si comporta esattamente come una classe quindi avrà parametri in input e variabili nel
+caso ce ne sarà bisogno.
+
+
+Nel return del metodo build della classe che ci è stata autocompilata dall'ide basta mettere il
+widget che vogliamo ri-usare.
+Ovviamente con tutti i figli, etc.
+
+
+In questo esempio (main_18) abbiamo creato 2 widget di tipo Container, li abbiamo messi dentro
+una cartella separata chiamata widgets e infine li abbiamo importati e usati nel main.

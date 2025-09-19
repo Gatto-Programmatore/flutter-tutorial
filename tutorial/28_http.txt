@@ -1,0 +1,26 @@
+
+
+Http:
+
+Sono chiamate attraverso la rete http per prendere dati da un server o inviarli.
+Solitamente si chiamano API (Application Programming Interface).
+
+Faremo un piccolo esempio di lettura di una api per prendere una lista di album.
+
+
+Stiamo seguendo il tutorial di flutter (non alla lettera) a questo link:
+https://docs.flutter.dev/cookbook/networking/fetch-data
+
+Abbiamo dovuto importare la dipendenza http eseguendo nel terminale "flutter pub add http".
+La useremo con l'import "import 'package:http/http.dart' as http;"
+
+Abbiamo aggiunto nel file "AndroidManifest.xml" il permesso di accesso ad internet:
+<uses-permission android:name="android.permission.INTERNET"/>
+Verrà chiesto all'utente in fase di installazione dell'app.
+
+L'esempio si basa sulle api http a questo endpoint che simula degli album:
+https://jsonplaceholder.typicode.com/albums
+
+Abbiamo creato un modello "Album" per mappare i dati presi dal server ma al momento non abbiamo
+creato i vari package dao e li abbiamo messi nella cartella lib per semplicità.
+

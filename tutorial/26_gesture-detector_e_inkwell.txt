@@ -1,0 +1,22 @@
+
+
+GestureDetector ed Inkwell
+
+
+GestureDetector
+
+Permette di aggiungere i tocchi (gesture) a quei widget che non li hanno di default.
+
+Ad esempio un Container, una Card, ecc.
+Invece un ElevatedButton, ListView, ecc. li hanno di default.
+
+Non va aggiunto sul padding.
+
+
+Inkwell
+
+Inkwell è simile a GestureDetector ma con l'effetto "ripple" cioè mostra un cerchio
+intorno al click nel punto dove clicchiamo.
+
+Oltre a questo si usa più per i widget grafici per aggiungere i tocchi (gesture).
+

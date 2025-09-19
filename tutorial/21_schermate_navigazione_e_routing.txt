@@ -1,0 +1,53 @@
+
+
+Schermate (pagine), Navigazione e Routing:
+
+L'app ci permette di navigare avanti e indietro tra più schermate.
+
+Al momento esistono 2 versioni differenti tra di loro per gestire la navigazione.
+Esse sono 1.0 e 2.0 ma non sono una l'aggiornamento dell'altra, fanno cose diverse.
+
+
+Navigator (navigazione):
+(appunti su navigazione 1.0)
+
+Le schermate vengono aggiunte e tolte creando una piccola cronologia. (come un mazzo di carte)
+
+Per aggiungere schermate si usa "Navigator.push()".
+Esempio:
+Navigator.push(context, MaterialPageRoute<void>(builder: (context) => nome_pagina()));
+
+Per togliere una schermata si usa "Navigator.pop()".
+Esempio:
+Navigator.pop(context);
+Non serve specificare la pagina perché torna indietro leggendo la cronologia delle schermate.
+
+
+Dati:
+Le schermate si possono scambiare dati tra di loro.
+Per far funziona il passaggio:
+- dalla prima pagina:
+    -- passiamo i dati nella firma dopo il nome della pagina (nel navigator)
+- dalla seconda pagina:
+    -- dobbiamo avere delle variabili per i dati che ci aspettiamo
+    -- dichiarare nel costruttore i dati che ci aspettiamo (nome variabili)
+
+
+Routing (Rotte):
+Per non ripetere ogni volta a mano il nome della pagina da aprire, possiamo dargli un percorso, come
+se fosse un id e chiamarla attraverso quello.
+
+Per dichiarare quali id (nomi) useremo per una certa pagina usiamo "routes":
+routes: {
+'/prima' (context) => PrimaPagina(),
+'/seconda' (context) => SecondaPagina()
+}
+// PrimaPagina e SecondaPagina sono widget per il body
+
+Per richiamare le pagine per id e non per nome del file:
+In questo caso usiamo "Navigator.pushNamed("id")" invece di "Navigator.push(...)".
+Navigator.pushNamed(context, "/prima")
+
+
+
+

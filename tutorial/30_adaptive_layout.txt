@@ -1,0 +1,35 @@
+
+
+Layout responsive & adaptive
+
+Il layout è tutto ciò che vediamo a schermo dentro l'app.
+(tutte le scritte, pulsanti, etc)
+
+Siccome gli schermi sono tanti e di dimensioni differenti (telefoni, tablet, pc, tv, etc),
+abbiamo bisogno di visulizzare un layout diverso per ognugno.
+
+
+
+Layout responsive
+
+Cambia in base al tipo di schermo (risponde al cambiamento).
+Ad esempio verticale e orizzontale oppure se lo schermo è maggiore di una certa dimensione, etc.
+
+Ovviamente dobbiamo dirgli come costruire i due layout noi a codice e lui sceglie.
+Lo si fa attraverso "MediaQuery" che ha vari metodi come "orientation", "size" e altro.
+Es: MediaQuery.of(context).orientation
+
+
+
+Layout adaptive
+
+Si adatta al tipo di dispositivo su cui sta girando l'applicazione.
+
+Usiamo il widget "TargetPlatform" insieme a "defaultTargetPlatform" per vedere e gestire le varie
+piattaforme.
+
+Per creare un layout android e ios su mobile abbiamo le librerie già integrate in flutter che si
+chiamano "Material components widgets" per android e "Cupertino (iOS-style) widgets" per ios.
+Mentre per windows e mac dobbiamo importare 2 librerie esterne che sono "fluent_ui" per windows e
+"macos_ui" per mac.
+

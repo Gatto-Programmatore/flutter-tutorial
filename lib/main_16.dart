@@ -32,6 +32,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('Slivers'),
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary
+      ),
       body: CustomScrollView(
         slivers: [
           // AppBar personalizzata
@@ -41,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // resta fissa al minimo quando andiamo in basso, altrimenti scompare
             expandedHeight: 120,
             // si ingrandisce quando andiamo in alto fino a tot grandezza
-            flexibleSpace: FlexibleSpaceBar(title: Text('Slivers')),
+            flexibleSpace: FlexibleSpaceBar(title: Text('Slivers app bar')),
           ),
           // Lista
           SliverList(

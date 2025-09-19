@@ -15,7 +15,17 @@ Le scatole (box) si dividono in:
                 La proprietà "flex" gestisce il comportamento di espansione quando abbiamo
                 2 widget di tipo extendedBox nello stesso layout quindi si auto-regolano.
                 Viene utilizzato per creare layout flessibili.
-- ConstrainedBox:
+- ConstrainedBox: si espande in automatico ma con dei vincoli.
+                Ha le proprietà "minWidth", "maxWidth", "minHeight", "maxHeight"
+                ed un widget figlio ("child" opzionale).
+                Viene utilizzato per creare layout flessibili ma con dei limiti.
+                E' utile quando vogliamo che un widget si adatti allo spazio disponibile
+                ma non superi certe dimensioni.
+- FractionallySizedBox: si espande in automatico ma in base ad una percentuale (non spiegato nel
+                tutorial)
+                Ha le proprietà "widthFactor" e "heightFactor" che sono percentuali
+                (0.0 a 1.0) ed un widget figlio ("child" opzionale).
+
 
 
 

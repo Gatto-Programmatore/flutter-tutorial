@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
             margin: EdgeInsets.all(10),
           ),
           SizedBox(
-            height: 150,
+            height: 200,
             child: ListView(
               padding: EdgeInsets.only(top: 20),
               children: [

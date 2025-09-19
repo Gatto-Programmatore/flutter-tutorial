@@ -6,9 +6,9 @@ Il CONTAINER cioè contenitore si adatta al suo widget interno.
 
 Il PADDING è lo spazio tra il contenitore ed il suo elemento interno.
 
-Il MARGIN è lo spazio tra il contenitore e i bordi dello schermo.
-
 Il BORDER è lo spazio tra il padding ed il margin.
+
+Il MARGIN è lo spazio tra il contenitore e i bordi dello schermo.
 
 
 Per fare un esempio dei 3 sopra, immaginate il pianetta terra.
@@ -18,7 +18,7 @@ E' tutto simile ad una matrioska di spazi esistenti o meno in base a comme li de
 
 
 In ordine sarebbero:
-elemento interno > padding > margin > border
+elemento interno > padding > border > margin
 
 Possiamo dire che ELEMENTO INTERNO + PADDING = CONTAINER
 

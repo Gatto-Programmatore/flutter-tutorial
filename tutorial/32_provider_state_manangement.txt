@@ -1,0 +1,21 @@
+
+
+Provider - state management
+
+Sono gestori degli stati dell'applicazione.
+Tengono in memoria dati finche l'app resta attiva.
+
+Il provider può essere messo ovunque e vale da quel widget / classe in giù per tutti i figli.
+Un dato si può condividere con più widget.
+
+
+Servono per tenere separata la logica degli stati dalla parte grafica cioè dai widget.
+
+Il provider gestisce 1 o più stati.
+Esempio potremo usarlo per gestire gli articoli di un carello, le preferenze della pagina
+dell'utente, dati temporanei che non devono essere salvati su db, etc
+
+
+Per usare il provider serve inportare la libreria "provider" con
+"fluter pub add provider".
+

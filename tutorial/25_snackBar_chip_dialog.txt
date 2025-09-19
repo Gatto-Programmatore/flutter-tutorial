@@ -1,0 +1,24 @@
+
+
+SnackBar, Chip, Dialog, CircularProgressIndicator
+sono tutti widget.
+
+
+SnackBar è il messaggio temporaneo che compare in basso nello schermo.
+Ad esempio quando cancelli qualcosa ti permette di annullare l'operazione entro tot secondi.
+
+
+Chip sono simili a delle card, servono per mostrare informazioni.
+Ad esempio sono usate in gmail come etichette delle email.
+
+
+CircularProgressIndicator è la rotellina di caricamento.
+
+
+SimpleDialog, AlertDialog sono finestre popup con pulsanti.
+
+SimpleDialog si usa per mostrare una finestra di dialogo con più opzioni tra cui scegliere.
+Ad esempio per scegliere un colore, una lingua, ecc.
+
+AlertDialog si usa per mostrare una finestra di dialogo con un messaggio di avviso o conferma.
+Ad esempio si/no.

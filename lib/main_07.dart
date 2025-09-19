@@ -46,11 +46,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       // container funge da corpo cioè body della pagina ma potevamo usare qualsiasi widget
       body: Container(
+        // arancione - spazio tra l'emento centrale (ciao) ed il suo contenitore
         padding: EdgeInsets.all(50),
-        // bianco - spazio trai bordi dello schermo (body) ed il bordo del contenitore interno
-        margin: EdgeInsets.all(50),
+        // bianco - spazio trai bordi dello schermo (body) ed il bordo del contenitore
+        margin: EdgeInsets.all(20),
         decoration: BoxDecoration(
-          // arancione - spazio tra l'emento centrale (ciao) ed il suo contenitore (bordo interno)
           color: Colors.orange,
           // blu - bordo del contenitore
           border: Border.all(width: 30, color: Colors.indigo),

@@ -1,0 +1,24 @@
+
+
+Librerie esterne:
+
+Sono sempre elementi (widget) che possiamo usare simili a quelli offerti da flutter.
+
+Per cercarli andiamo su https://pub.dev/ oppure anche su google con "flutter + nome".
+Molto probabilmente ci uscirà comunque il sito di pub.dev.
+
+Alcuni esempi di librerie: player audio/video, mappe, database, etc.
+
+
+Per usarli bisogna importarli, prima nel progetto poi nel file dove lo usiamo.
+Ci sono 2 modi:
+- manualemente: modificando il file pubspec.yaml
+- automaticamente: con il comando "flutter pub add nome_libreria" da terminale.
+In entrambi i casi troviamo le info nel tab "installing" della pagina della libreria su pub.dev.
+
+
+Ogni libreria ha una sua documentazione (tab readme), che spiega come usarla e quali sono le sue
+funzionalità.
+Bisogna leggerla tutta prima di usare un elemento perché potrebbe avere modalità diverse.
+
+

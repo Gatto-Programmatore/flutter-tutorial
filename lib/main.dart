@@ -119,8 +119,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               "\n\nQuesta pagina è stata autogenerata come esempio da "
               "AndroidStudio.\n\nPer seguire il tutorial si deve eseguire "
-              "ogni file \'main.dart_00\' con relativo numero che fa riferimento "
-              "agli appunti della cartella \'tutorial\'.",
+              "ogni file 'main.dart_00' con relativo numero che fa riferimento "
+              "agli appunti della cartella 'tutorial'.",
               style: Theme.of(context).textTheme.headlineLarge,
             ),
           ],

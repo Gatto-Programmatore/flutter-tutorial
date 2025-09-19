@@ -67,17 +67,17 @@ class _MyHomePageState extends State<MyHomePage> {
             height: 400,
             child: GridView.count(
               crossAxisCount: 2,
-              crossAxisSpacing: 4,
-              mainAxisSpacing: 4,
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
               children: [
                 for (var i in lista)
                   GridTile(
                     footer: Container(
-                      padding: EdgeInsets.all(4),
+                      padding: EdgeInsets.all(8),
                       alignment: Alignment.bottomRight,
                       child: Icon(Icons.favorite, color: Colors.red),
                     ),
-                    child: Image.asset('images/avatar.jpg'),
+                    child: Image.asset('images/avatar.jpg', fit: BoxFit.fill,),
                   ),
               ],
             ),
