@@ -1,8 +1,9 @@
 import 'package:corso_flutter/auth.dart';
 import 'package:corso_flutter/widgets/AfterLoginHomePage.dart';
 import 'package:corso_flutter/widgets/AuthPage.dart';
-import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+
 import 'firebase_options.dart';
 
 void main() async {

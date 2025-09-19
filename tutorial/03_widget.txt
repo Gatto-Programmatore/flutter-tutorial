@@ -52,6 +52,30 @@ appBar: AppBar(
 ),
 
 
+
+Context e BuildContext:
+In Flutter, ogni widget ha un oggetto BuildContext che rappresenta la posizione del widget
+nell'albero dei widget. Questo contesto è usato per:
+- accedere ai widget antenati (come Theme, MediaQuery, InheritedWidget)
+- navigare tra schermate (Navigator.of(context).push(...))
+- mostrare dialoghi, snackbars, ecc.
+
+! Potresti avere dei problemi con il contesto in certi casi quando tenti di ottenere dati dal
+provider. Ad esempio "${context.watch<Counter>().count}".
+
+Questo perché non riesce ad ottenere il contesto dal widget padre o il widget deve ancora essere
+creato oppure stai passando il contesto del widget figlio.
+
+Possibili soluzioni:
+- verifica bene il widget padre che non deve essere direttamente "MaterialApp" ma qualcosa
+come "Scaffold".
+- usa Builder o WidgetsBinding.instance.addPostFrameCallback per accedere al contesto dopo
+la build.
+- passa funzioni o dati dal padre al figlio invece di cercare di accedere direttamente al
+contesto del padre.
+
+
+
 Testo e stile:
 Possiamo formattare il testo come in word semplicemente applicandogli dello stile.
 Esempio di testo con stile:

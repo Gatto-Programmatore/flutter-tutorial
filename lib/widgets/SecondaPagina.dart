@@ -16,6 +16,7 @@ class SecondaPagina extends StatelessWidget {
             'Seconda Pagina',
             style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
           ),
+          Padding(padding: EdgeInsetsGeometry.only(top: 10)),
           ElevatedButton(
             onPressed: () {
               // se non abbiamo un routing passiamo il widget:
@@ -27,7 +28,7 @@ class SecondaPagina extends StatelessWidget {
               // se vogliamo tornare indietro
               //Navigator.pop(context); // non serve la pagina perché l'ha memorizzata nella cronologia
             },
-            child: Text('cambia pagina'),
+            child: Text('cambia pagina', style: TextStyle(fontSize: 20)),
           ),
         ],
       ),

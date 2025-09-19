@@ -18,7 +18,19 @@ class PrimaPagina extends StatelessWidget {
             'Prima Pagina',
             style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
           ),
-          Text(data),
+
+          Padding(padding: EdgeInsetsGeometry.only(top: 10)),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("Testo ricevuto: ", style: TextStyle(fontSize: 20)),
+              Text(data, style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700)),
+            ],
+          ),
+
+          Padding(padding: EdgeInsetsGeometry.only(top: 10)),
+
           ElevatedButton(
             onPressed: () {
               // se non abbiamo un routing passiamo il widget:
@@ -30,7 +42,7 @@ class PrimaPagina extends StatelessWidget {
               // se vogliamo tornare indietro
               //Navigator.pop(context); // non serve la pagina perché l'ha memorizzata nella cronologia
             },
-            child: Text('cambia pagina'),
+            child: Text('cambia pagina', style: TextStyle(fontSize: 20)),
           ),
         ],
       ),

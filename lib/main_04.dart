@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),
@@ -67,36 +66,46 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            Text('(premi + in basso a destra per incrementare)'),
+            Text('(premi + i pulsanti sotto per incrementare)'),
             Text("\n\n"),
             TextButton(
-              onPressed: () => print('TextButton'),
+              onPressed: () {
+                print('TextButton');
+                _incrementCounter();
+              },
               child: Text("TextButton"),
             ),
             ElevatedButton(
-              onPressed: () => print('ElevatedButton'),
+              onPressed: () {
+                print('ElevatedButton');
+                _incrementCounter();
+              },
               child: Text("ElevatedButton"),
             ),
             OutlinedButton(
-              onPressed: () => print('OutlinedButton'),
+              onPressed: () {
+                print('OutlinedButton');
+                _incrementCounter();
+              },
               child: Text("OutlinedButton"),
             ),
             TextButton.icon(
-              onPressed: () => print('TextButton.icon'),
+              onPressed: () {
+                print('TextButton.icon');
+                _incrementCounter();
+              },
               icon: Icon(Icons.access_time_filled),
               label: Text("TextButton"),
             ),
             IconButton(
-              onPressed: () => print('IconButton'),
+              onPressed: () {
+                print('IconButton');
+                _incrementCounter();
+              },
               icon: Icon(Icons.ac_unit),
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }

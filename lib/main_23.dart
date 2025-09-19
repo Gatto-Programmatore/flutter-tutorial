@@ -1,4 +1,3 @@
-
 import 'package:corso_flutter/widgets/AnimazioneHeroPage.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),
@@ -30,6 +28,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final String _descrizione = "L'immagine viene trascinata da una pagina all'altra";
+  // TODO: manca la pagina dove risulta trascinata oppure manca qulcosa, da rivedere
 
   @override
   Widget build(BuildContext context) {

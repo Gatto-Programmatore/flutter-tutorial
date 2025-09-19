@@ -27,13 +27,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return MaterialApp(
 
       theme: ThemeData(
-        // in teoria il codice sotto dovrebbe funzionare ma per qualche motivo non va
-
         // Per creare un tema si devono specificare molti colori
         // colorScheme: ColorScheme(brightness: , primary: , onPrimary: , secondary: , onSecondary: , error: , onError: , surface: , onSurface: )
-        // ma è possibile usare il metodo fromSeed per semplificare
-        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
 
+        // è possibile usare il metodo fromSeed per semplificare
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
+
+        // oppure il metodo fromSwatch
         // lo swatch è un insieme di colori primari generati da 1 solo colore
         //primarySwatch: Colors.orange,
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.lightBlue),
@@ -70,6 +70,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
 
+        // serve a far vedere che si è preso il tema ed i colori di base dell'app.
+        // cioè è colorato invece di grigio
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: const Icon(Icons.add),
