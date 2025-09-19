@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "390427294036",
+    "project_id": "corso-flutter-9d16a",
+    "storage_bucket": "corso-flutter-9d16a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390427294036:android:06339d65badb856849b0c1",
+        "android_client_info": {
+          "package_name": "me.gattoprogrammatore.corso_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlw5SbZWynr012qgxxqzeSwELWNEjh7BE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
